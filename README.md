@@ -18,6 +18,7 @@ g++ CscoreTool-M.cpp twister.cpp -fopenmp -O3 -o CscoreTool-M
 You'll get an execuable file CscoreTool-M.
 
 Usage: Usage: CscoreTool-M <windows_Rabl.bed> <input.summary> <OutputPrefix> <N_subcompartments> <N_Rablwindow> <session> [Blacklist.bed] [ExcludedInteractions.txt]
+
 Input parameters
 
 a. windows.bed This file is to specify the genomic windows to analyze. It should be an equal-length bed file with the fourth column being the Rabl position, i.e. the relative position between centromere (-0.5) and telomere (0.5). 
@@ -39,7 +40,9 @@ For each line, several genomic regions are listed in the chrName_chrStart_chrEnd
 Example run:
 
 CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_1 5 20 12 
+
 CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_2 5 20 12 hg38_blacklisted.bed
+
 CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_3 5 20 12 hg38_blacklisted.bed Test_excluded.txt
 
 Output
