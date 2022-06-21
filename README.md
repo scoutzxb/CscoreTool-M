@@ -19,7 +19,7 @@ g++ CscoreTool-M.cpp twister.cpp -fopenmp -O3 -o CscoreTool-M
 
 You'll get an execuable file CscoreTool-M.
 
-Usage: Usage: CscoreTool-M <windows_Rabl.bed> <input.summary> <OutputPrefix> <N_subcompartments> <N_Rablwindow> <session> [Blacklist.bed] [ExcludedInteractions.txt]
+Usage: Usage: CscoreTool-M <windows_Rabl.bed> <input.summary> <OutputPrefix> <N_subcompartments> <N_Rablwindow> <N_session> [Blacklist.bed] [ExcludedInteractions.txt]
 
 Input parameters
 
@@ -28,12 +28,16 @@ a. windows.bed This file is to specify the genomic windows to analyze. It should
 b. input.summary This file is the main input file for Hi-C interactions. We accept the same format as the HiCsummary file format for HOMER runHiCpca.pl. See http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html An example file test.summary.gz can be downloaded. This is 0.5% randomly selected reads in chr1 from the High-resolution GM12878 cell Hi-C dataset (Rao, 2014).
 
 c. OutputPrefix This is the prefix for output files.
+  
+d. N_subcompartment The number of sub-compartment to analyze
+  
+e. N_Rablwindow The size of the Rabl matrix output.
 
-d. session This the number of sessions to use. The number of choice depends on the resource available. 
+f. N_session This the number of sessions to use. The number of choice depends on the resource available. These 6 arguments a-f are needed.
 
-e. Blacklist.bed This is the encode blacklist file which lists the blacklist regions excluded from ChIP-seq analysis, possibly due to copy number variations. If the program takes 7 arguments, it will take the 7th argument as Blacklisted.bed.
+g. Blacklist.bed This is the encode blacklist file which lists the blacklist regions excluded from ChIP-seq analysis, possibly due to copy number variations. If the program takes 7 arguments, it will take the 7th argument as Blacklisted.bed.
 
-f. ExcludedInteractions.txt This is the file for excluding regions having translocations. The format is like
+h. ExcludedInteractions.txt This is the file for excluding regions having translocations. The format is like
   
 chrName1a_chrStart1a_chrEnd1a chrName1b_chrStart1b_chrEnd1b
   
