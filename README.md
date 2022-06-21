@@ -3,7 +3,7 @@ Multiple sub-compartment analysis from Hi-C data
 
 Purpose
 
-This program is to do multiple sub-compartment analysis for Hi-C data. Test data are also provided. Several other files are also available for download, including the bedgraph files involved in the CscoreTool-M paper.
+This program is to do multiple sub-compartment analysis for Hi-C data. Test data are also provided.
 
 Installation
 
