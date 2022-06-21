@@ -45,11 +45,11 @@ For each line, several genomic regions are listed in the chrName_chrStart_chrEnd
 
 Example run:
 
-CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_1 5 20 12 
+./CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_1 5 20 12 
 
-CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_2 5 20 12 hg38_blacklisted.bed
+./CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_2 5 20 12 hg38_blacklisted.bed
 
-CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_3 5 20 12 hg38_blacklisted.bed Test_excluded.txt
+./CscoreTool-M hg38_100k_Rabl.bed Test.summary Test_100k_3 5 20 12 hg38_blacklisted.bed Test_excluded.txt
 
 Output
 There are 3 output files.
