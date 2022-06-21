@@ -32,9 +32,13 @@ d. session This the number of sessions to use. The number of choice depends on t
 e. Blacklist.bed This is the encode blacklist file which lists the blacklist regions excluded from ChIP-seq analysis, possibly due to copy number variations. If the program takes 7 arguments, it will take the 7th argument as Blacklisted.bed.
 
 f. ExcludedInteractions.txt This is the file for excluding regions having translocations. The format is like
+  
 chrName1a_chrStart1a_chrEnd1a chrName1b_chrStart1b_chrEnd1b
+  
 chrName2a_chrStart2a_chrEnd2a chrName2b_chrStart2b_chrEnd2b chrName2c_chrStart2c_chrEnd2c
+  
   ......
+  
 For each line, several genomic regions are listed in the chrName_chrStart_chrEnd format and separated by tab. Then any interactions between genomic regions in the same line will be excluded from the analysis. Note that the expectation are also excluded in the calculation, so it's different from simply delete the interactions from the input file. If the program takes 8 arguments, it will take the 8th argument as ExcludedInteractions.txt.
 
 Example run:
