@@ -23,7 +23,7 @@ Usage: Usage: CscoreTool-M <windows_Rabl.bed> <input.summary> <OutputPrefix> <N_
 
 Input parameters
 
-a. windows.bed This file is to specify the genomic windows to analyze. It should be an equal-length bed file with the fourth column being the Rabl position, i.e. the relative position between centromere (-0.5) and telomere (0.5). 
+a. windows.bed This file is to specify the genomic windows to analyze. It should be an equal-length bed file with the fourth column being the Rabl position, i.e. the relative position between centromere (0) and telomere (1). 
 
 b. input.summary This file is the main input file for Hi-C interactions. We accept the same format as the HiCsummary file format for HOMER runHiCpca.pl. See http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html An example file test.summary.gz can be downloaded. This is 0.5% randomly selected reads in chr1 from the High-resolution GM12878 cell Hi-C dataset (Rao, 2014).
 
